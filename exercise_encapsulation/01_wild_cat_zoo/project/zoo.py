@@ -70,7 +70,7 @@ class Zoo:
 
     def workers_status(self):
         result = [f"You have {len(self.workers)} workers"]
-        # group animals by their class name in first-seen order
+        # group workers by their class name in first-seen order
         groups: dict[str, list[Worker]] = {}
         for worker in self.workers:
             cls_name = worker.__class__.__name__
